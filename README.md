@@ -1,5 +1,7 @@
 # Docker image for Laravel with NodeJS and more
 
+> :warning: **This repo is not yet tested for actual working images :D**
+
 Build images are available at https://hub.docker.com/repository/docker/iamrgroot/laravel-node
 
 ### Build image
@@ -24,3 +26,7 @@ Use with `--build-arg`
 docker login
 docker push username/my-repo:tagname
 ```
+
+### Example
+
+Example [docker-compose.yml](docker-compose.yml) and [.env](.env) files are available.
