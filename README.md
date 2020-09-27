@@ -27,4 +27,4 @@ docker push username/my-repo:tagname
 
 ### Example
 
-Example [docker-compose.yml](docker-compose.yml) and [.env](.env) files are available.
+Example [docker-compose.yml](docker-compose.yml) and [.env](.env) files are available. 
