@@ -1,4 +1,4 @@
-
+[![GitHub Action Build](https://img.shields.io/github/workflow/status/iamrgroot/docker-laravel/Docker%20Build/master)](https://github.com/IAmRGroot/docker-laravel/actions?query=workflow%3A%22Docker+Build%22)
 [![Docker Automated Badge](https://img.shields.io/docker/cloud/automated/iamrgroot/laravel)](https://hub.docker.com/r/iamrgroot/laravel/)
 [![Docker Build Badge](https://img.shields.io/docker/cloud/build/iamrgroot/laravel)](https://hub.docker.com/r/iamrgroot/laravel/)
 [![Docker Image Size Badge](https://img.shields.io/docker/image-size/iamrgroot/laravel)](https://hub.docker.com/r/iamrgroot/laravel/)
