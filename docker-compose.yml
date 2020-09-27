@@ -1,4 +1,4 @@
-version: 3.7
+version: "3.7"
 services:
   laravel:
     image: iamrgroot/laravel:${TAG:-php7.4fpm-node14}

@@ -7,10 +7,6 @@ ARG IMAGICK=true
 
 USER root
 
-# Start script
-COPY start.sh /usr/local/bin/start
-RUN chmod u+x /usr/local/bin/start 
-
 # Install system dependencies
 RUN apt-get update > /dev/null && \
     apt-get install -y --no-install-recommends \
@@ -55,6 +51,11 @@ RUN apt-get install --yes nodejs build-essential > /dev/null
 RUN useradd -G www-data,root -u 1234 -d /home/laravel laravel
 RUN mkdir -p /home/laravel/.composer
 RUN chown -R laravel:laravel /home/laravel
+
+# Start script
+COPY start.sh /usr/local/bin/start
+RUN chmod u+x /usr/local/bin/start
+RUN chown -R laravel:laravel /usr/local/bin/start
 
 # Set working directory
 WORKDIR /var/www
