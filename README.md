@@ -1,8 +1,6 @@
 # Docker image for Laravel with NodeJS and more
 
-> :warning: **This repo is not yet tested for actual working images :D**
-
-Build images are available at https://hub.docker.com/repository/docker/iamrgroot/laravel-node
+Build images are available at https://hub.docker.com/repository/docker/iamrgroot/laravel. See tags for versions used.
 
 ### Build image
 

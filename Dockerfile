@@ -2,12 +2,14 @@ ARG PHP_VERSION="7.4-fpm"
 
 FROM php:${PHP_VERSION}
 
-RUN php -v
-
 ARG NODE_VERSION=14
 ARG IMAGICK=true
 
 USER root
+
+# Start script
+COPY start.sh /usr/local/bin/start
+RUN chmod u+x /usr/local/bin/start 
 
 # Install system dependencies
 RUN apt-get update > /dev/null && \
@@ -58,3 +60,5 @@ RUN chown -R laravel:laravel /home/laravel
 WORKDIR /var/www
 
 USER laravel
+
+CMD ["/usr/local/bin/start"]
