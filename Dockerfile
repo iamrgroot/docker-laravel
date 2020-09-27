@@ -50,16 +50,17 @@ RUN apt-get install --yes nodejs build-essential > /dev/null
 # Create system user to run Composer and Artisan Commands
 RUN useradd -G www-data,root -u 1234 -d /home/laravel laravel
 RUN mkdir -p /home/laravel/.composer
-RUN chown -R laravel:laravel /home/laravel
 
 # Start script
-COPY start.sh /usr/local/bin/start
-RUN chmod u+x /usr/local/bin/start
-RUN chown -R laravel:laravel /usr/local/bin/start
+COPY start.sh /home/laravel/start
+
+# Permission
+RUN chown -R laravel:laravel /home/laravel
+RUN chmod +x /home/laravel/start
 
 # Set working directory
 WORKDIR /var/www
 
 USER laravel
 
-CMD ["/usr/local/bin/start"]
+CMD ["/home/laravel/start"]

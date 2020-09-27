@@ -6,7 +6,8 @@ role=${CONTAINER_ROLE:-app}
 
 if [ "$role" = "app" ]; then
 
-    exit 0
+    echo "Running the main app..."
+    php-fpm -F
 
 elif [ "$role" = "queue" ]; then
 
@@ -15,6 +16,7 @@ elif [ "$role" = "queue" ]; then
 
 elif [ "$role" = "scheduler" ]; then
 
+    echo "Running the scheduler every minute..."
     while [ true ]
     do
       php /var/www/artisan schedule:run --verbose --no-interaction &
