@@ -1,7 +1,8 @@
-![](https://img.shields.io/docker/cloud/automated/iamrgroot/laravel)
-![](https://img.shields.io/docker/cloud/build/iamrgroot/laravel)
-![](https://img.shields.io/docker/image-size/iamrgroot/laravel)
-![](https://img.shields.io/docker/pulls/iamrgroot/laravel)
+
+[![Docker Automated Badge](https://img.shields.io/docker/cloud/automated/iamrgroot/laravel)](https://hub.docker.com/r/iamrgroot/laravel/)
+[![Docker Build Badge](https://img.shields.io/docker/cloud/build/iamrgroot/laravel)](https://hub.docker.com/r/iamrgroot/laravel/)
+[![Docker Image Size Badge](https://img.shields.io/docker/image-size/iamrgroot/laravel)](https://hub.docker.com/r/iamrgroot/laravel/)
+[![Docker Pulls Badge](https://img.shields.io/docker/pulls/iamrgroot/laravel)](https://hub.docker.com/r/iamrgroot/laravel/)
 
 # Docker image for Laravel with NodeJS and more
 
