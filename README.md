@@ -1,3 +1,5 @@
+![](https://img.shields.io/docker/cloud/build/iamrgroot/laravel)
+
 # Docker image for Laravel with NodeJS and more
 
 Build images are available at https://hub.docker.com/repository/docker/iamrgroot/laravel. See tags for versions used.
