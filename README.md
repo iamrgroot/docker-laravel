@@ -1,3 +1,4 @@
+![](https://img.shields.io/docker/cloud/automated/iamrgroot/laravel)
 ![](https://img.shields.io/docker/cloud/build/iamrgroot/laravel)
 ![](https://img.shields.io/docker/image-size/iamrgroot/laravel)
 ![](https://img.shields.io/docker/pulls/iamrgroot/laravel)
