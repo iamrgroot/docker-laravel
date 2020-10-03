@@ -2,7 +2,7 @@ ARG PHP_VERSION="7.4-fpm"
 
 FROM php:${PHP_VERSION}
 
-LABEL maintainer="info@rgroot.nl"
+LABEL maintainer="github@rgroot.nl"
 
 ARG NODE_VERSION=14
 ARG IMAGICK=true
