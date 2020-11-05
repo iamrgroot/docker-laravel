@@ -4,7 +4,7 @@ FROM php:${PHP_VERSION}
 
 LABEL maintainer="github@rgroot.nl"
 
-ARG NODE_VERSION=14
+ARG NODE_VERSION=15
 ARG IMAGICK=true
 
 USER root
