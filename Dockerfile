@@ -49,20 +49,8 @@ RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-di
 RUN curl --silent --location https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - > /dev/null
 RUN apt-get install --yes nodejs build-essential > /dev/null
 
-# Create system user to run Composer and Artisan Commands
-RUN useradd -G www-data,root -u 1234 -d /home/laravel laravel
-RUN mkdir -p /home/laravel/.composer
-
-# Start script
-COPY start.sh /home/laravel/start
-
-# Permission
-RUN chown -R laravel:laravel /home/laravel
-RUN chmod +x /home/laravel/start
+# Add start script
+COPY start.sh /usr/bin/start.sh
 
 # Set working directory
 WORKDIR /var/www
-
-USER laravel
-
-CMD ["/home/laravel/start"]
